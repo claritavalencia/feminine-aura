@@ -1,0 +1,125 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Primary Brand Colors */
+  --primary: #F34792;
+  --accent: #FF9FC9;
+  --secondary: #1A0A1A;
+  
+  /* Background & Text */
+  --background: #FFFFFF;
+  --foreground: #1A1A1A;
+  
+  /* Additional Colors */
+  --muted: #F5F5F5;
+  --border: #E5E5E5;
+  
+  /* Radius */
+  --radius: 0.625rem;
+}
+
+.dark {
+  --background: #0F0F0F;
+  --foreground: #FFFFFF;
+  --muted: #2A2A2A;
+  --border: #3A3A3A;
+}
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--background);
+  --color-card-foreground: var(--foreground);
+  --color-popover: var(--background);
+  --color-popover-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--background);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--background);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--background);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-destructive-foreground: var(--background);
+  --color-border: var(--border);
+  --color-input: var(--background);
+  --color-ring: var(--primary);
+  --color-chart-1: var(--primary);
+  --color-chart-2: var(--accent);
+  --color-chart-3: var(--secondary);
+  --color-chart-4: oklch(0.828 0.189 84.429);
+  --color-chart-5: oklch(0.769 0.188 70.08);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--background);
+  --color-sidebar-foreground: var(--foreground);
+  --color-sidebar-primary: var(--primary);
+  --color-sidebar-primary-foreground: var(--background);
+  --color-sidebar-accent: var(--secondary);
+  --color-sidebar-accent-foreground: var(--background);
+  --color-sidebar-border: var(--border);
+  --color-sidebar-ring: var(--primary);
+}
+
+@layer base {
+  * {
+    @apply border-current outline-current;
+  }
+  body {
+    @apply bg-white text-foreground;
+  }
+  
+  /* Added smooth scroll and improved accessibility */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Simplified gradient styles for logo and hero title */
+.logo-gradient {
+  background: linear-gradient(135deg, #F34792 0%, #FF9FC9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-title-gradient {
+  background: linear-gradient(135deg, #CB0059 0%, #E74B8F 50%, #CB0059 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Added premium transition utilities and button styles for consistency */
+.btn-primary {
+  @apply bg-primary text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 active:scale-95 transition-all duration-200 ease-out;
+}
+
+.btn-secondary {
+  @apply border-2 border-primary/20 rounded hover:bg-primary/5 transition-colors duration-200;
+}
+
+.card-hover {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+/* Improved input styling for better accessibility */
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  @apply transition-all duration-200;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+  @apply ring-2 ring-primary/30;
+}

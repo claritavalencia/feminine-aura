@@ -1,0 +1,15 @@
+# Activer le module de réécriture
+RewriteEngine On
+
+# Définir la base de réécriture (correspondant au chemin dans XAMPP avec espace)
+RewriteBase /Feminine%20Aura_last/api/
+
+# Si le fichier ou le dossier existe, ne pas réécrire
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rediriger toutes les requêtes vers index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# CORS est géré par PHP (config/cors.php) pour éviter les headers dupliqués
+# Ne pas définir les headers CORS ici

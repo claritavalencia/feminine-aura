@@ -1,0 +1,179 @@
+# ==========================================
+# FICHIERS À EXCLURE DU GIT
+# Projet Feminine Aura - E-commerce
+# ==========================================
+
+# ============ NEXT.JS / NODE.JS ============
+# Dépendances (très volumineuses, à réinstaller avec npm install)
+node_modules/
+/.pnp
+.pnp.js
+
+# Build Next.js (généré automatiquement)
+.next/
+out/
+build/
+dist/
+
+# Cache Next.js
+.next/cache/
+
+# ============ ENVIRONNEMENT & SECRETS ============
+# CRITIQUE : Ne JAMAIS commit les fichiers d'environnement
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# Fichier .env de l'API PHP
+api/.env
+
+# ============ LOGS & DEBUG ============
+# Fichiers de logs (peuvent contenir des infos sensibles)
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log.*
+
+# ============ SYSTÈME D'EXPLOITATION ============
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ============ ÉDITEURS & IDE ============
+# VS Code
+.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json (optionnel si vous voulez partager config)
+
+# JetBrains (PHPStorm, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ============ TYPESCRIPT ============
+*.tsbuildinfo
+next-env.d.ts
+
+# ============ TESTS ============
+coverage/
+.nyc_output/
+
+# ============ BASE DE DONNÉES ============
+# IMPORTANT : Ne pas commit les dumps avec données sensibles
+*.sql.backup
+database_backup/
+backups/
+
+# PhpMyAdmin exports (si vous en faites)
+phpmyadmin_*.sql
+
+# GARDEZ UNIQUEMENT :
+# - schema.sql (structure de la base)
+# - seed.sql (données de démonstration anonymisées)
+
+# ============ PHP ============
+# Composer (équivalent npm pour PHP)
+vendor/
+composer.lock (optionnel, mais mieux de le garder)
+
+# ============ UPLOADS & FICHIERS GÉNÉRÉS ============
+# Dossier d'upload utilisateur (images produits uploadées)
+api/uploads/*
+!api/uploads/.gitkeep
+
+# Fichiers temporaires
+tmp/
+temp/
+*.tmp
+*.cache
+
+# ============ DOCUMENTATION TEMPORAIRE ============
+# Fichiers de documentation en cours (brouillons)
+*.draft.md
+NOTES-PERSO.md
+TODO-PRIVE.md
+
+# ============ CONFIGURATION LOCALE ============
+# Configuration Apache locale (peut varier selon l'environnement)
+# ATTENTION : Gardez .htaccess si nécessaire pour le fonctionnement
+# Mais commentez les lignes spécifiques à votre machine
+
+# ============ ARCHIVES ============
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ============ SAUVEGARDES ============
+*.bak
+*.backup
+*_backup
+*_old
+*.old
+
+# ============ FICHIERS SPÉCIFIQUES AU PROJET ============
+# Fichiers de test/diagnostic que vous avez créés
+test-cors.php
+test-api.php
+DIAGNOSTIC-*.md (si vous ne voulez pas les partager)
+
+# Rapports de bugs/problèmes personnels
+BUG-REPORT-*.md
+ERREURS-*.md
+
+# ============ CERTIFICATS & CLÉS ============
+# CRITIQUE : Ne JAMAIS commit des clés privées
+*.key
+*.pem
+*.cert
+*.crt
+*.p12
+*.pfx
+ssl/
+certificates/
+
+# Clés API (Stripe, PayPal, etc.)
+secrets/
+api-keys.json
+
+# ============ DOSSIERS XAMPP/WAMP ============
+# Ne pas inclure les fichiers de config XAMPP
+xampp/
+wamp/
+mysql/data/
+
+# ============ OPTIONNEL : README PERSONNEL ============
+# Si vous avez des notes personnelles
+README-NOTES-PERSO.md
+MES-NOTES.md
