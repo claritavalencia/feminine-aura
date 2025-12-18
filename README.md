@@ -1,4 +1,4 @@
-# 💖 Feminine Aura - E-Commerce Lingerie
+#Feminine Aura - E-Commerce Lingerie
 
 Application e-commerce complète de vente de lingerie féminine avec interface Next.js et API REST PHP.
 
@@ -10,23 +10,23 @@ Application e-commerce complète de vente de lingerie féminine avec interface N
 
 ---
 
-## 🎯 Description
+## Description
 
 **Feminine Aura** est une boutique en ligne élégante de lingerie féminine offrant :
-- 🛍️ Catalogue de produits avec filtres et recherche
-- 🛒 Panier d'achat persistant
-- ❤️ Système de favoris
-- 👤 Authentification utilisateur
-- 💳 Gestion des commandes
-- ⭐ Avis et notes clients
-- 👨‍💼 Dashboard administrateur complet
-- 📊 Statistiques et rapports
+- Catalogue de produits avec filtres et recherche
+- Panier d'achat persistant
+- Système de favoris
+- Authentification utilisateur
+- Gestion des commandes
+- Avis et notes clients
+- Dashboard administrateur complet
+- Statistiques et rapports
 
 ---
 
-## 🛠️ Technologies Utilisées
+## Technologies Utilisées
 
-### 🎨 Frontend
+### Frontend
 
 #### Framework & Librairies
 - **[Next.js 16](https://nextjs.org/)** - Framework React avec App Router
@@ -161,7 +161,7 @@ api/
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Prérequis
 
@@ -316,26 +316,26 @@ http://localhost:3000/admin
 
 #### Fonctionnalités
 
-**📊 Statistiques** :
+**Statistiques** :
 - Revenus du mois
 - Nombre de commandes
 - Produits en stock
 - Nouveaux clients
 
-**📦 Gestion Produits** :
+**Gestion Produits** :
 - Liste tous les produits
 - Créer nouveau produit
 - Modifier produit existant
 - Supprimer produit
 - Gérer stock
 
-**📋 Gestion Commandes** :
+**Gestion Commandes** :
 - Liste toutes les commandes
 - Filtrer par statut
 - Changer statut commande
 - Voir détails commande
 
-**📁 Gestion Catégories** :
+**Gestion Catégories** :
 - Liste catégories
 - Créer catégorie
 - Modifier catégorie
@@ -343,7 +343,7 @@ http://localhost:3000/admin
 
 ---
 
-## 🔌 API REST
+## API REST
 
 ### Base URL
 ```
@@ -352,7 +352,7 @@ http://localhost/Feminine%20Aura_last/api
 
 ### Endpoints Principaux
 
-#### 🔐 Authentification
+#### Authentification
 
 **POST** `/auth/register`
 ```json
@@ -375,7 +375,7 @@ http://localhost/Feminine%20Aura_last/api
 Headers: Authorization: Bearer {token}
 ```
 
-#### 📦 Produits
+####  Produits
 
 **GET** `/produits` - Liste tous les produits
 ```
@@ -411,13 +411,13 @@ Query params:
 
 **DELETE** `/produits/{id}` (Admin) - Supprimer produit
 
-#### 📁 Catégories
+####  Catégories
 
 **GET** `/categories` - Liste catégories
 
 **GET** `/categories/{id}` - Détails catégorie
 
-#### 🛒 Panier
+#### Panier
 
 **GET** `/panier` - Récupérer panier
 
@@ -441,7 +441,7 @@ Query params:
 
 **DELETE** `/panier/clear` - Vider panier
 
-#### ❤️ Favoris
+#### Favoris
 
 **GET** `/favoris` - Liste favoris
 
@@ -452,7 +452,7 @@ Query params:
 }
 ```
 
-#### 📦 Commandes
+#### Commandes
 
 **GET** `/commandes` - Liste commandes
 
@@ -471,7 +471,7 @@ Query params:
 
 ---
 
-## 📂 Structure du Projet
+## Structure du Projet
 
 ```
 Feminine Aura_last/
@@ -534,7 +534,7 @@ Feminine Aura_last/
 
 ---
 
-## 🧪 Tests & Debugging
+## Tests & Debugging
 
 ### Scripts de Diagnostic
 
@@ -558,9 +558,9 @@ http://localhost/Feminine%20Aura_last/api/fix-admin-password.php
 **Frontend (Console navigateur)** :
 ```javascript
 // Logs API automatiques
-🔵 API Request: http://localhost/.../api/produits
-🟢 API Response status: 200
-📦 API Data: {success: true, ...}
+API Request: http://localhost/.../api/produits
+API Response status: 200
+API Data: {success: true, ...}
 ```
 
 **Backend (Apache logs)** :
@@ -570,7 +570,7 @@ c:\xampp\apache\logs\error.log
 
 ---
 
-## 🔧 Scripts npm
+## Scripts npm
 
 ```json
 {
@@ -685,7 +685,7 @@ Ce projet est sous licence MIT.
 
 ---
 
-## 📞 Support
+## Support
 
 - **Issues** : GitHub Issues
 - **Email** : support@feminineaura.com
@@ -693,7 +693,7 @@ Ce projet est sous licence MIT.
 
 ---
 
-## 📊 Statistiques
+## Statistiques
 
 ![GitHub repo size](https://img.shields.io/badge/size-~50MB-blue)
 ![Lines of code](https://img.shields.io/badge/lines-~10k-green)
@@ -704,9 +704,8 @@ Ce projet est sous licence MIT.
 ---
 
 **Version** : 1.0.0
-**Dernière mise à jour** : Décembre 2024
-**Status** : ✅ Production Ready
+**Dernière mise à jour** : Décembre 2025
+**Status** : Production Ready
 
 ---
 
-Made with 💖 by **Feminine Aura Team**
